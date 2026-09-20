@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Nova App</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script src="https://cdn.jsdelivr.net/npm/flowbite@2.5.2/dist/flowbite.min.js"></script>
+</head>
+<body class="bg-gray-50 text-gray-800">
+
+<!-- NAVBAR -->
+<nav class="bg-white border-b sticky top-0 z-50">
+  <div class="max-w-5xl mx-auto px-4 flex justify-between items-center h-14">
+    <a href="#home" onclick="go('home')" class="font-bold text-xl text-blue-600">Nova</a>
+    <div class="hidden md:flex gap-6 text-sm font-medium">
+      <a href="#home" onclick="go('home')">Home</a>
+      <a href="#about" onclick="go('about')">About</a>
+      <a href="#contact" onclick="go('contact')">Contact</a>
+      <a href="#signup" onclick="go('signup')" class="bg-blue-600 text-white px-3 py-1 rounded">Sign Up</a>
+      <a href="#signin" onclick="go('signin')">Sign In</a>
+    </div>
+    <button onclick="document.getElementById('mnav').classList.toggle('hidden')" class="md:hidden text-2xl">☰</button>
+  </div>
+  <div id="mnav" class="hidden md:hidden px-4 pb-3 space-y-2 border-t">
+    <a href="#home" onclick="go('home')" class="block">Home</a>
+    <a href="#about" onclick="go('about')" class="block">About</a>
+    <a href="#contact" onclick="go('contact')" class="block">Contact</a>
+    <a href="#signup" onclick="go('signup')" class="block text-blue-600">Sign Up</a>
+    <a href="#signin" onclick="go('signin')" class="block text-blue-600">Sign In</a>
+  </div>
+</nav>
+
+<main class="max-w-5xl mx-auto px-4 py-8">
+
+<!-- HOME -->
+<section id="home" class="page">
+  <!-- 1. Hero -->
+  <div class="bg-blue-600 text-white rounded-2xl p-10 text-center mb-10">
+    <h1 class="text-4xl font-bold mb-3">Build Faster with Nova</h1>
+    <p class="mb-6">Simple Tailwind components for modern websites.</p>
+    <a href="#signup" onclick="go('signup')" class="bg-white text-blue-600 px-6 py-2 rounded-lg font-semibold">Get Started</a>
+  </div>
+  <!-- 2-4. Feature Cards -->
+  <div class="grid md:grid-cols-3 gap-4 mb-10">
+    <div class="bg-white p-5 rounded-xl border shadow-sm"><h3 class="font-bold mb-1">⚡ Fast</h3><p class="text-sm text-gray-600">Quick to use</p></div>
+    <div class="bg-white p-5 rounded-xl border shadow-sm"><h3 class="font-bold mb-1">🎨 Clean</h3><p class="text-sm text-gray-600">Modern design</p></div>
+    <div class="bg-white p-5 rounded-xl border shadow-sm"><h3 class="font-bold mb-1">📱 Responsive</h3><p class="text-sm text-gray-600">Works on all devices</p></div>
+  </div>
+  <!-- 5. Stats -->
+  <div class="grid grid-cols-3 gap-4 text-center mb-10">
+    <div class="bg-white p-4 rounded-xl border"><p class="text-2xl font-bold text-blue-600">10k+</p><p class="text-sm">Users</p></div>
+    <div class="bg-white p-4 rounded-xl border"><p class="text-2xl font-bold text-blue-600">50+</p><p class="text-sm">Components</p></div>
+    <div class="bg-white p-4 rounded-xl border"><p class="text-2xl font-bold text-blue-600">24/7</p><p class="text-sm">Support</p></div>
+  </div>
+  <!-- 6-8. Pricing -->
+  <div class="grid md:grid-cols-3 gap-4 mb-10">
+    <div class="bg-white p-5 rounded-xl border text-center"><h3 class="font-bold">Free</h3><p class="text-2xl font-bold my-2">$0</p><button class="w-full border py-1 rounded">Start</button></div>
+    <div class="bg-blue-600 text-white p-5 rounded-xl text-center"><h3 class="font-bold">Pro</h3><p class="text-2xl font-bold my-2">$19</p><button class="w-full bg-white text-blue-600 py-1 rounded">Start</button></div>
+    <div class="bg-white p-5 rounded-xl border text-center"><h3 class="font-bold">Team</h3><p class="text-2xl font-bold my-2">$49</p><button class="w-full border py-1 rounded">Start</button></div>
+  </div>
+  <!-- 9. Testimonial -->
+  <div class="bg-white p-6 rounded-xl border mb-10 text-center">
+    <p class="italic mb-2">"Nova made my project look professional in minutes!"</p>
+    <p class="font-semibold text-sm">— Alex, Developer</p>
+  </div>
+  <!-- 10. CTA -->
+  <div class="bg-gray-800 text-white rounded-2xl p-8 text-center">
+    <h2 class="text-2xl font-bold mb-3">Ready to start?</h2>
+    <a href="#signup" onclick="go('signup')" class="inline-block bg-blue-500 px-6 py-2 rounded-lg">Sign Up Free</a>
+  </div>
+</section>
+
+<!-- ABOUT -->
+<section id="about" class="page hidden">
+  <h1 class="text-3xl font-bold mb-8 text-center">About Us</h1>
+  <!-- 1. Stats -->
+  <div class="grid grid-cols-2 md:grid-cols-4 gap-4 mb-10 text-center">
+    <div class="bg-white p-4 rounded-xl border"><p class="text-xl font-bold text-blue-600">2019</p><p class="text-sm">Founded</p></div>
+    <div class="bg-white p-4 rounded-xl border"><p class="text-xl font-bold text-blue-600">20+</p><p class="text-sm">Team</p></div>
+    <div class="bg-white p-4 rounded-xl border"><p class="text-xl font-bold text-blue-600">100k</p><p class="text-sm">Users</p></div>
+    <div class="bg-white p-4 rounded-xl border"><p class="text-xl font-bold text-blue-600">30+</p><p class="text-sm">Countries</p></div>
+  </div>
+  <!-- 2. Timeline -->
+  <div class="mb-10">
+    <h2 class="font-bold text-xl mb-4">Timeline</h2>
+    <div class="space-y-3 border-l-2 border-blue-500 pl-4">
+      <div><p class="font-semibold">2019 – Started</p><p class="text-sm text-gray-600">Idea was born</p></div>
+      <div><p class="font-semibold">2022 – Launch</p><p class="text-sm text-gray-600">First version released</p></div>
+      <div><p class="font-semibold">2025 – Today</p><p class="text-sm text-gray-600">Growing community</p></div>
+    </div>
+  </div>
+  <!-- 3. Team -->
+  <div class="mb-10">
+    <h2 class="font-bold text-xl mb-4">Team</h2>
+    <div class="grid grid-cols-2 md:grid-cols-4 gap-4 text-center">
+      <div class="bg-white p-4 rounded-xl border"><div class="w-16 h-16 bg-blue-200 rounded-full mx-auto mb-2"></div><p class="font-semibold">Alex</p><p class="text-xs text-gray-500">CEO</p></div>
+      <div class="bg-white p-4 rounded-xl border"><div class="w-16 h-16 bg-green-200 rounded-full mx-auto mb-2"></div><p class="font-semibold">Sam</p><p class="text-xs text-gray-500">Design</p></div>
+      <div class="bg-white p-4 rounded-xl border"><div class="w-16 h-16 bg-purple-200 rounded-full mx-auto mb-2"></div><p class="font-semibold">Jordan</p><p class="text-xs text-gray-500">Dev</p></div>
+      <div class="bg-white p-4 rounded-xl border"><div class="w-16 h-16 bg-yellow-200 rounded-full mx-auto mb-2"></div><p class="font-semibold">Taylor</p><p class="text-xs text-gray-500">Support</p></div>
+    </div>
+  </div>
+  <!-- 4. Testimonial -->
+  <div class="bg-blue-50 p-6 rounded-xl mb-10 text-center">
+    <p class="italic">"Best simple UI kit we have used."</p>
+    <p class="font-semibold mt-2 text-sm">— Casey, Startup Founder</p>
+  </div>
+  <!-- 5. Accordion (Flowbite) -->
+  <div id="accordion" data-accordion="collapse">
+    <h2><button type="button" class="flex justify-between w-full p-4 font-medium border rounded-t-lg" data-accordion-target="#a1" aria-expanded="true" aria-controls="a1"><span>Is it free?</span></button></h2>
+    <div id="a1" class="hidden p-4 border border-t-0"><p class="text-sm">Yes, the basic version is free.</p></div>
+    <h2><button type="button" class="flex justify-between w-full p-4 font-medium border" data-accordion-target="#a2" aria-expanded="false" aria-controls="a2"><span>Can I use it commercially?</span></button></h2>
+    <div id="a2" class="hidden p-4 border border-t-0"><p class="text-sm">Yes, commercial use is allowed.</p></div>
+  </div>
+</section>
+      
+
+<!-- CONTACT -->
+<section id="contact" class="page hidden">
+  <h1 class="text-3xl font-bold mb-8 text-center">Contact Us</h1>
+  <div class="grid md:grid-cols-2 gap-8">
+    <!-- Form (Formspree) -->
+    <form action="https://formspree.io/f/xqpapenv" method="POST" class="bg-white p-6 rounded-xl border space-y-4">
+      <div>
+        <label class="block text-sm font-medium mb-1">Name</label>
+        <input type="text" name="name" required class="w-full border rounded-lg px-3 py-2">
+      </div>
+      <div>
+        <label class="block text-sm font-medium mb-1">Email</label>
+        <input type="email" name="email" required class="w-full border rounded-lg px-3 py-2">
+      </div>
+      <div>
+        <label class="block text-sm font-medium mb-1">Message</label>
+        <textarea name="message" rows="4" required class="w-full border rounded-lg px-3 py-2"></textarea>
+      </div>
+      <button type="submit" class="w-full bg-blue-600 text-white py-2 rounded-lg">Send</button>
+      <p class="text-xs text-gray-500">Replace YOUR_FORM_ID with your Formspree ID</p>
+    </form>
+    <!-- Info + Map + Social -->
+    <div class="space-y-4">
+      <div class="bg-white p-4 rounded-xl border flex gap-3"><span class="text-xl">📍</span><div><p class="font-semibold">Address</p><p class="text-sm text-gray-600">123 Main St</p></div></div>
+      <div class="bg-white p-4 rounded-xl border flex gap-3"><span class="text-xl">✉️</span><div><p class="font-semibold">Email</p><p class="text-sm text-gray-600">hello@nova.app</p></div></div>
+      <div class="bg-white p-4 rounded-xl border flex gap-3"><span class="text-xl">📞</span><div><p class="font-semibold">Phone</p><p class="text-sm text-gray-600">+1 555 123 4567</p></div></div>
+      <div class="bg-gray-200 h-32 rounded-xl flex items-center justify-center text-gray-500 text-sm">Map Placeholder</div>
+      <div class="flex gap-3">
+        <a href="#" class="bg-white border px-4 py-2 rounded-lg text-sm">Twitter</a>
+        <a href="#" class="bg-white border px-4 py-2 rounded-lg text-sm">GitHub</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- SIGN UP -->
+<section id="signup" class="page hidden">
+  <div class="max-w-md mx-auto bg-white p-8 rounded-2xl border shadow-sm">
+    <h1 class="text-2xl font-bold text-center mb-6">Sign Up</h1>
+    <div class="grid grid-cols-2 gap-3 mb-4">
+      <button class="border py-2 rounded-lg text-sm">Google</button>
+      <button class="border py-2 rounded-lg text-sm">GitHub</button>
+    </div>
+    <p class="text-center text-sm text-gray-500 mb-4">or</p>
+    <form class="space-y-4">
+      <input type="text" placeholder="Full Name" required class="w-full border rounded-lg px-3 py-2">
+      <input type="email" placeholder="Email" required class="w-full border rounded-lg px-3 py-2">
+      <input type="password" placeholder="Password" required minlength="6" class="w-full border rounded-lg px-3 py-2">
+      <label class="flex items-center gap-2 text-sm"><input type="checkbox" required> I agree to terms</label>
+      <button type="submit" class="w-full bg-blue-600 text-white py-2 rounded-lg">Create Account</button>
+    </form>
+    <p class="text-center text-sm mt-4">Already have an account? <a href="#signin" onclick="go('signin')" class="text-blue-600 font-medium">Sign in</a></p>
+  </div>
+</section>
+
+<!-- SIGN IN -->
+<section id="signin" class="page hidden">
+  <div class="max-w-md mx-auto bg-white p-8 rounded-2xl border shadow-sm">
+    <h1 class="text-2xl font-bold text-center mb-6">Sign In</h1>
+    <div class="grid grid-cols-2 gap-3 mb-4">
+      <button class="border py-2 rounded-lg text-sm">Google</button>
+      <button class="border py-2 rounded-lg text-sm">GitHub</button>
+    </div>
+    <p class="text-center text-sm text-gray-500 mb-4">or</p>
+    <form class="space-y-4">
+      <input type="email" placeholder="Email" required class="w-full border rounded-lg px-3 py-2">
+      <input type="password" placeholder="Password" required class="w-full border rounded-lg px-3 py-2">
+      <div class="flex justify-between text-sm">
+        <label class="flex items-center gap-1"><input type="checkbox"> Remember</label>
+        <a href="#" class="text-blue-600">Forgot?</a>
+      </div>
+      <button type="submit" class="w-full bg-blue-600 text-white py-2 rounded-lg">Sign In</button>
+    </form>
+    <p class="text-center text-sm mt-4">Don’t have an account? <a href="#signup" onclick="go('signup')" class="text-blue-600 font-medium">Sign up</a></p>
+  </div>
+</section>
+
+</main>
+
+<!-- FOOTER -->
+<footer class="bg-gray-900 text-gray-300 text-center py-8 mt-12">
+  <p class="font-bold text-white mb-2">Nova</p>
+  <div class="flex justify-center gap-6 text-sm mb-4">
+    <a href="#home" onclick="go('home')">Home</a>
+    <a href="#about" onclick="go('about')">About</a>
+    <a href="#contact" onclick="go('contact')">Contact</a>
+  </div>
+  <p class="text-xs">© 2025 Nova. Built with Tailwind CSS.</p>
+</footer>
+
+<script>
+function go(id) {
+  document.querySelectorAll('.page').forEach(p => p.classList.add('hidden'));
+  document.getElementById(id).classList.remove('hidden');
+  location.hash = id;
+  window.scrollTo(0,0);
+  document.getElementById('mnav').classList.add('hidden');
+}
+window.onload = () => go(location.hash.slice(1) || 'home');
+window.onhashchange = () => go(location.hash.slice(1) || 'home');
+</script>
+</body>
+</html>
