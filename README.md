@@ -12,4 +12,4 @@ A clean, responsive multi-page demo built with Tailwind CSS and Flowbite.
 **Tech**  
 HTML • Tailwind CSS • Flowbite • Vanilla JS
 
-Open `index.html` in any browser. No build step required.
+Open `about.html` in any browser. No build step required.
