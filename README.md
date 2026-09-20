@@ -10,6 +10,6 @@ A clean, responsive multi-page demo built with Tailwind CSS and Flowbite.
 - Mobile-friendly navigation
 
 **Tech**  
-HTML • Tailwind CSS • Flowbite • Vanilla JS
+HTML • Tailwind CSS 
 
 Open `about.html` in any browser. No build step required.
